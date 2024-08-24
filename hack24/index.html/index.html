@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#collaborate">Collaborate</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div class="project-list">
+                <h3>My Projects</h3>
+                <ul id="project-list">
+                    <!-- project list will be generated dynamically using JavaScript -->
+                </ul>
+            </div>
+            <div class="progress-tracker">
+                <h3>Progress Tracker</h3>
+                <canvas id="progress-chart" width="400" height="200"></canvas>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <input type="text" id="project-name" placeholder="Enter project name">
+            <button id="create-project">Create Project</button>
+            <ul id="project-list">
+                <!-- project list will be generated dynamically using JavaScript -->
+            </ul>
+        </section>
+        <section id="resources">
+            <h2>Resources</h2>
+            <input type="text" id="resource-name" placeholder="Enter resource name">
+            <button id="add-resource">Add Resource</button>
+            <ul id="resource-list">
+                <!-- resource list will be generated dynamically using JavaScript -->
+            </ul>
+        </section>
+        <section id="collaborate">
+            <h2>Collaborate</h2>
+            <input type="text" id="collaborator-email" placeholder="Enter collaborator's email">
+            <button id="add-collaborator">Add Collaborator</button>
+            <ul id="collaborator-list">
+                <!-- collaborator list will be generated dynamically using JavaScript -->
+            </ul>
+        </section>
+        <section id="profile">
+            <h2>Profile</h2>
+            <form id="profile-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <br>
+                <button id="save-profile">Save Profile</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
